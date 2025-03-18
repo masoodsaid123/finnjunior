@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinnJunior - Premium Kids' Eyewear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF3B30',
+                        secondary: '#1A237E'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-12">
+                <a href="#" class="text-3xl font-['Pacifico'] text-primary">FinnJunior</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-primary">Collections</a>
+                    <a href="#" class="text-gray-700 hover:text-primary">Age Groups</a>
+                    <a href="#" class="text-gray-700 hover:text-primary">Technology</a>
+                    <a href="#" class="text-gray-700 hover:text-primary">About Us</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-700 hover:text-primary">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-primary">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-shopping-cart-line"></i>
+                    </div>
+                </a>
+                <a href="#" class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90">
+                    Shop Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative h-screen bg-gradient-to-r from-gray-50 to-gray-100 overflow-hidden">
+            <div class="container mx-auto px-4 h-full flex items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-16">
+                    <div class="space-y-8">
+                        <h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+                            See the World <br>
+                            <span class="text-primary">in Style</span>
+                        </h1>
+                        <p class="text-xl text-gray-600">
+                            Premium eyewear designed specifically for children, combining style, comfort and protection.
+                        </p>
+                        <div class="flex space-x-4">
+                            <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90">
+                                Shop Collection
+                            </button>
+                            <button class="border-2 border-gray-900 text-gray-900 px-8 py-3 !rounded-button hover:bg-gray-900 hover:text-white">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://public.readdy.ai/ai/img_res/d3675eded8e2e9b4a23d8d1525573244.jpg" 
+                             alt="Premium Kids Eyewear" 
+                             class="rounded-xl shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose FinnJunior?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Our commitment to quality and safety makes us the trusted choice for parents worldwide.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-shield-check-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">German Engineering</h3>
+                        <p class="text-gray-600">
+                            Precision-engineered frames crafted with the finest materials for durability and comfort.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-sun-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">UV Protection</h3>
+                        <p class="text-gray-600">
+                            100% UV protection to keep young eyes safe from harmful sun rays.
+                        </p>
+                    </div>
+                    <div class="text-center p-8 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="ri-heart-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Kid-Friendly Design</h3>
+                        <p class="text-gray-600">
+                            Flexible, lightweight frames designed specifically for active children.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Collections</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Discover our range of stylish and durable eyewear designed for young explorers.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/3cd0cacb41d5c5527c12be04dcb94403.jpg" 
+                             alt="Optical Collection"
+                             class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Optical Collection</h3>
+                            <p class="text-gray-600 mb-4">
+                                Stylish frames for clear vision and maximum comfort.
+                            </p>
+                            <button class="text-primary font-semibold hover:text-primary/80">
+                                Explore Collection →
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/d83b2b83230af50526fd412100e09c42.jpg" 
+                             alt="Sunglasses Collection"
+                             class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Sunglasses Collection</h3>
+                            <p class="text-gray-600 mb-4">
+                                Protection meets style for sunny adventures.
+                            </p>
+                            <button class="text-primary font-semibold hover:text-primary/80">
+                                Explore Collection →
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/94d22b445aad4fcf3996ce7aef433758.jpg" 
+                             alt="Sports Collection"
+                             class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Sports Collection</h3>
+                            <p class="text-gray-600 mb-4">
+                                Durable frames for active lifestyles.
+                            </p>
+                            <button class="text-primary font-semibold hover:text-primary/80">
+                                Explore Collection →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://public.readdy.ai/ai/img_res/f9abaec6a28b158033a53fcb83fb8840.jpg" 
+                             alt="Premium Care Kit"
+                             class="rounded-xl shadow-xl">
+                    </div>
+                    <div class="space-y-8">
+                        <h2 class="text-4xl font-bold text-gray-900">Premium Care Kit</h2>
+                        <p class="text-gray-600 text-lg">
+                            Every FinnJunior purchase comes with our signature care kit, including:
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                </div>
+                                <span class="text-gray-700">Premium protective case</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                </div>
+                                <span class="text-gray-700">Professional lens cleaning solution</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                </div>
+                                <span class="text-gray-700">Microfiber cleaning cloth</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <div class="w-6 h-6 flex items-center justify-center text-primary">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                </div>
+                                <span class="text-gray-700">Adjustable safety strap</span>
+                            </li>
+                        </ul>
+                        <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90">
+                            Learn More About Care
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">What Parents Say</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Trusted by parents worldwide for quality and style.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-2 text-primary mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "The quality and durability of FinnJunior glasses are outstanding. My daughter loves wearing them!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="ri-user-line text-gray-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Sarah Anderson</h4>
+                                <p class="text-sm text-gray-500">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-2 text-primary mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "Perfect fit for my son's active lifestyle. The customer service is exceptional!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="ri-user-line text-gray-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Michael Thompson</h4>
+                                <p class="text-sm text-gray-500">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-2 text-primary mb-4">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "Stylish designs and excellent UV protection. Worth every penny!"
+                        </p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="ri-user-line text-gray-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Emily Roberts</h4>
+                                <p class="text-sm text-gray-500">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-primary">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-white mb-8">Ready to Find the Perfect Pair?</h2>
+                    <button class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-gray-100">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-['Pacifico'] mb-6">FinnJunior</h3>
+                    <p class="text-gray-400">
+                        Premium eyewear designed for children, combining style, comfort and protection.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Shop</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Optical Glasses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sunglasses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sports Glasses</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Support</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get special offers and updates.
+                    </p>
+                    <form class="flex">
+                        <input type="email" 
+                               placeholder="Enter your email" 
+                               class="flex-1 px-4 py-2 rounded-l-button bg-gray-800 border-none focus:outline-none text-white">
+                        <button class="bg-primary px-6 py-2 !rounded-r-button hover:bg-primary/90">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 FinnJunior. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-pinterest-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
